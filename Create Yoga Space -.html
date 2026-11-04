@@ -1,0 +1,236 @@
+<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><title>Create Yoga Space</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<style>
+:root{color-scheme:light dark;--bg:#f4efe6;--fg:#2d2a32;--card:#fffdf9;--mut:#5b5565;--ac:#7c5cbf;--bd:#e6dccb;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#15131c;--fg:#efeaf5;--card:#201d2b;--mut:#c6bdd6;--ac:#a58bea;--bd:#38334a}}
+:root[data-theme="dark"]{--bg:#15131c;--fg:#efeaf5;--card:#201d2b;--mut:#c6bdd6;--ac:#a58bea;--bd:#38334a}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+body{margin:0;background:radial-gradient(circle at 15% -5%,#c7b4f044,transparent 45%),radial-gradient(circle at 95% 10%,#8fd3c044,transparent 40%),var(--bg);color:var(--fg);font:17px/1.6 system-ui,-apple-system,Segoe UI,sans-serif}
+main{max-width:520px;margin:auto;padding:12px}
+h1{font:600 26px Georgia,serif;margin:4px 0;letter-spacing:.5px}h3{margin:0 0 10px;font-size:19px}
+nav{display:flex;gap:6px;margin:8px 0}nav button{flex:1}
+button,.b{background:var(--ac);color:#fff;border:0;border-radius:99px;padding:8px 14px;font:inherit;cursor:pointer;text-decoration:none;display:inline-block;margin:2px}
+button.g{background:transparent;color:var(--fg);border:1px solid var(--bd)}
+button.on{outline:2px solid var(--fg)}
+input,select{background:var(--card);color:var(--fg);border:1px solid var(--bd);border-radius:8px;padding:8px;font:inherit;width:100%;box-sizing:border-box;margin:3px 0}
+.card{background:var(--card);border:1px solid var(--bd);border-radius:20px;padding:14px;margin:12px 0;box-shadow:0 6px 24px #7c5cbf14}
+.it{display:flex;justify-content:space-between;align-items:center;gap:6px;padding:6px 0;border-bottom:1px solid var(--bd)}
+.it select{width:auto}.it input{width:70px}
+canvas{width:100%;max-width:480px;display:block;margin:auto;border-radius:14px;touch-action:manipulation}
+.row{display:flex;justify-content:center;flex-wrap:wrap}
+.chip{background:#e5383b22;color:#e5383b;border:1px solid #e5383b66;padding:3px 9px;border-radius:99px;margin:2px}
+small,.m{color:var(--mut);font-size:14.5px}details{border-bottom:1px solid var(--bd);padding:6px 0}a{color:var(--ac)}
+section{display:none}section.on{display:block}
+nav{position:sticky;top:0;z-index:10;background:var(--bg);padding:8px 0;margin:6px 0;border-bottom:1px solid var(--bd)}
+nav button{font-size:16px;padding:11px 4px;font-weight:600}
+.sub{display:flex;gap:6px;overflow-x:auto;margin:12px 0 4px;padding-bottom:4px}
+.sub button{flex:0 0 auto;font-size:16px;padding:10px 16px}
+.sb{display:none}.sb.on{display:block}
+input,select{font-size:16px;padding:10px}
+button,.b{font-size:16px;min-height:42px}
+.chip{font-size:15px;padding:5px 11px}
+input[type=range]{padding:0;accent-color:var(--ac);min-height:32px}
+label{display:block;margin:10px 0}
+#bgart{position:fixed;inset:0;z-index:-1;pointer-events:none;background:linear-gradient(180deg,#7a56c9 0%,#a98be0 30%,#d9cdf3 62%,var(--bg) 92%)}
+#bgc{max-width:none;width:100%;height:100%;border-radius:0;margin:0;display:block}
+h1{color:#fff;text-shadow:0 2px 12px #4b2f9a99}
+.tg{color:#fff!important;font-size:15px;text-shadow:0 1px 8px #4b2f9a99}
+.card{background:color-mix(in srgb,var(--card) 93%,transparent)}
+nav{background:color-mix(in srgb,var(--bg) 72%,transparent);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border-bottom-color:transparent}
+</style></head><body><div id="bgart"><canvas id="bgc"></canvas></div><main>
+<h1>🪷 Create Yoga Space</h1><small class="tg">Breathe · flow · share · Namaste</small>
+<nav><button data-a="tab" data-v="tb">🪷 Build</button><button class="g" data-a="tab" data-v="tg">✨ Suggest</button><button class="g" data-a="tab" data-v="ts">💬 Space</button><button class="g" data-a="tab" data-v="tl">📖 Learn</button><button class="g" data-a="tab" data-v="ta">🙏 About</button></nav>
+
+<section id="tb" class="on">
+<canvas id="cv" width="400" height="420"></canvas>
+<div class="row"><button id="pp" data-a="tog">▶ Play</button><button class="g" data-a="rs">⟲ Restart</button><button data-a="rec" style="background:#e5383b">● Record video</button></div>
+<div class="sub" id="subnav"><button data-a="sub" data-v="info">Pose</button><button class="g" data-a="sub" data-v="flow">Flow</button><button class="g" data-a="sub" data-v="poses">Poses</button><button class="g" data-a="sub" data-v="look">Style &amp; avatar</button><button class="g" data-a="sub" data-v="sound">Sound</button><button class="g" data-a="sub" data-v="saved">Saved</button></div><div class="card sb" data-sub="look"><h3>Style & avatar</h3><select id="sty"><option value="all">Style: all poses</option><option value="Vinyasa">Vinyasa (flowing)</option><option value="Ashtanga">Ashtanga (Mysore: 5 breaths per pose)</option><option value="Bikram">Bikram (hot 26 series)</option><option value="Iyengar">Iyengar (alignment, long holds)</option><option value="Bikram Adv.">Bikram Advanced series</option></select><button data-a="preset">Load a starter flow in this style</button><select id="gen"><option value="f">Female avatar</option><option value="m">Male avatar</option></select><select id="skn"><option value="0">White skin tone</option><option value="1">Yellow skin tone</option><option value="2">Brown skin tone</option><option value="3">Black skin tone</option><option value="4">Olive skin tone</option><option value="5">Medium brown skin tone</option></select><select id="bld"><option value="1">Athletic build</option><option value="0">Slim build</option><option value="2">Strong build</option></select><select id="hr"><option value="0">Short hair</option><option value="1">Long hair</option><option value="2">Hair in a bun</option><option value="3">Shaved head</option></select><select id="out"><option value="0">Violet outfit</option><option value="1">Ocean blue outfit</option><option value="2">Coral outfit</option><option value="3">Charcoal outfit</option><option value="4">Sage outfit</option></select></div><div id="info" class="card sb" data-sub="info"></div>
+<div class="card sb" data-sub="flow"><input id="nm" value="My Flow" placeholder="Name your flow">
+
+<input type="file" id="mf" accept="audio/*" hidden><div id="fl"></div><b id="tot"></b><br>
+<button data-a="save">Save flow</button><button class="g" data-a="clr">Clear</button><div id="vid"></div></div>
+<div class="card sb" data-sub="poses"><h3>Add poses</h3><input id="q" placeholder="Search poses or body parts"><div id="pk"></div></div>
+<div class="card sb" data-sub="sound"><h3>Sound &amp; voice</h3><label>Music</label><select id="mus"><optgroup label="Ambient library"><option value="calm">Calm pad</option><option value="warm">Warm drone</option><option value="bright">Bright pad</option><option value="om">Deep OM drone</option><option value="bowls">Singing bowls</option><option value="aurora">Aurora</option><option value="zen">Zen garden</option><option value="sunrise">Sunrise raga drone</option><option value="moon">Moonlight</option></optgroup><optgroup label="Other"><option value="none">No music</option><option value="file">My own audio file…</option></optgroup></select><label><input type="checkbox" id="vo" checked style="width:auto"> Voice guide: English name, Sanskrit name, then Inhale / Exhale</label><label>🗣 Voice volume: <b id="vvl">100%</b><input type="range" id="vv" min="0" max="100" value="100"></label><label>🎵 Music volume: <b id="mvl">50%</b><input type="range" id="mvv" min="0" max="100" value="50"></label><button class="g" data-a="vtest">▶ Test voice</button><br><small>The voice is not captured in recorded videos; music is.</small></div><div class="card sb" data-sub="saved"><h3>My saved flows</h3><div id="my"></div></div>
+</section>
+
+<section id="ta"><div class="card" style="text-align:center"><div style="font-size:48px">🪷</div><h2 style="margin:4px 0;font-family:Georgia,serif">Jordan Kniffen</h2><p>Developer from Colorado · RYT 200 · passionate yogi</p></div>
+<div class="card"><h3>About the developer</h3><p>I’m a developer from Colorado and a passionate yogi. Achieved his RYT200 from <a href="https://www.ISSA.org" target="_blank" rel="noopener">www.ISSA.org</a> in February 2025.</p></div>
+<div class="card"><h3>Some of my favorite yoga schools</h3><div class="it"><span><a href="https://www.balancedmovementyoga.com" target="_blank" rel="noopener"><b>Balanced Movement Yoga</b></a></span><small>Greeley</small></div><div class="it"><span><a href="https://www.weseektheriver.com/" target="_blank" rel="noopener"><b>The River Yoga</b></a></span><small>Denver</small></div><div class="it"><span><a href="https://www.corepoweryoga.com/" target="_blank" rel="noopener"><b>CorePower Yoga</b></a></span><small>Denver</small></div><div class="it"><span><a href="https://www.yogabox.com/" target="_blank" rel="noopener"><b>Yoga Box</b></a></span><small>Denver</small></div><div class="it"><span><a href="https://www.blackswanyoga.com/" target="_blank" rel="noopener"><b>Black Swan Yoga</b></a></span><small>Denver</small></div><div class="it"><span><a href="https://trufusion.com/" target="_blank" rel="noopener"><b>Trufusion</b></a></span><small>Denver</small></div><div class="it"><span><a href="https://boulderbikramyoga.com/" target="_blank" rel="noopener"><b>Boulder Bikram Yoga</b></a></span><small>Boulder</small></div><div class="it"><span><a href="https://www.pureyogatexas.com/dallas/" target="_blank" rel="noopener"><b>Pure Yoga Dallas</b></a></span><small>Texas</small></div></div>
+<div class="card"><h3>About this app</h3><p>This app was designed for yoga instructors and fellow yogis interested in developing their own routines to further their practice.</p><p style="text-align:center;font:italic 26px Georgia,serif;color:var(--ac);margin:18px 0 6px">Just Breathe. 🙏</p></div></section>
+<section id="tg"></section><section id="ts"></section>
+<section id="tl"></section>
+<p><small>Educational use only, not medical advice. Talk to a clinician before starting yoga with an injury or health condition.</small></p>
+</main>
+<script>
+const $=s=>document.querySelector(s),esc=s=>String(s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const ld=(k,d)=>{try{return JSON.parse(localStorage.getItem(k))||d}catch(e){return d}},sv=(k,v)=>{try{localStorage.setItem(k,JSON.stringify(v))}catch(e){}};
+const RG={neck:['Head & neck','Gentle lengthening eases tension in the upper trapezius and suboccipital muscles, which can reduce desk-posture strain and tension-type headaches.'],
+shoulders:['Shoulders','Improves mobility and scapular stability around the rotator cuff and deltoids; may reduce stiffness and impingement-type discomfort.'],
+arms:['Arms','Builds endurance in biceps, triceps and forearms and stabilizes wrist and elbow joints; weight-bearing poses load bone, supporting bone density.'],
+chest:['Chest & upper back','Opening the pectorals and thoracic spine increases rib-cage expansion and breathing capacity and counters rounded posture.'],
+core:['Core & lower back','Strengthens abdominals and spinal stabilizers (multifidus, erector spinae). Clinical trials show yoga can reduce chronic low-back pain.'],
+hips:['Hips','Lengthens hip flexors and rotators, easing stiffness from prolonged sitting and supporting pelvic and knee alignment.'],
+thighs:['Thighs','Quadriceps and hamstring strength and flexibility protect the knees and improve gait, balance and fall resilience.'],
+calves:['Calves & ankles','Flexibility in the gastrocnemius, soleus and Achilles lowers strain risk; ankle stability improves balance.']};
+const ALL=Object.keys(RG);
+// name, sanskrit, level, angles[torso,aL,fL,aR,fR,tL,sL,tR,sR], parts, benefit
+const P=[
+['Mountain','Tadasana','Beginner',[180,3,3,3,3,0,0,0,0],['core','chest','thighs'],'Builds posture awareness and grounds the whole body.'],
+['Upward Salute','Urdhva Hastasana','Beginner',[180,175,178,178,180,0,0,0,0],['shoulders','arms','chest','core'],'Lengthens the spine and opens shoulders and chest.'],
+['Forward Fold','Uttanasana','Beginner',[25,0,70,0,70,0,0,0,0],['core','thighs','calves','neck'],'Stretches hamstrings and calves, releases the back and calms the nervous system.'],
+['Chair','Utkatasana','Beginner',[160,150,155,150,155,75,-5,75,-5],['thighs','hips','core','arms'],'Strengthens quads and glutes and builds stamina.'],
+['Crescent Lunge','Anjaneyasana','Intermediate',[180,180,180,180,180,80,0,-58,-58],['hips','thighs','chest','arms'],'Opens hip flexors and builds leg strength and balance.'],
+['Warrior III','Virabhadrasana III','Intermediate',[90,90,90,90,90,0,0,-90,-90],['core','thighs','calves','shoulders'],'Builds balance, core control and standing-leg strength.'],
+['Downward Dog','Adho Mukha Svanasana','Beginner',[45,25,25,25,25,-25,-25,-25,-25],['shoulders','arms','calves','thighs','neck'],'Lengthens hamstrings and calves, strengthens shoulders, mild inversion.'],
+['Plank','Phalakasana','Beginner',[113,0,0,0,0,-67,-67,-67,-67],['core','arms','shoulders'],'Builds core, shoulder and wrist strength.'],
+['Cobra','Bhujangasana','Beginner',[140,20,70,20,70,-90,-90,-90,-90],['chest','core','shoulders','neck'],'Strengthens spinal extensors and opens the chest.'],
+['Child’s Pose','Balasana','Beginner',[85,90,90,90,90,90,-90,90,-90],['hips','core','neck','shoulders'],'Gently stretches back and hips; a calming rest pose.'],
+['Tree','Vrksasana','Beginner',[180,175,178,178,180,0,0,100,-30],['thighs','calves','hips','arms'],'Improves balance, focus and ankle stability.'],
+['Bridge','Setu Bandha Sarvangasana','Beginner',[-60,90,90,90,90,115,5,115,5],['hips','thighs','core','chest','neck'],'Strengthens glutes and back, opens chest and hip flexors.'],
+['Corpse','Savasana','Beginner',[-90,92,92,92,92,90,90,90,90],ALL,'Full-body relaxation that lowers stress and integrates the practice.'],
+['Easy Pose','Sukhasana','Beginner',[180,60,100,60,100,80,-80,80,-80],['hips','core','chest'],'Seated base for breathing, meditation and gentle hip opening.'],
+['Tabletop','Bharmanasana','Beginner',[101,0,0,0,0,0,-90,0,-90],['core','shoulders','arms','hips'],'Neutral spine base for cat-cow; warms wrists, shoulders and core.'],
+['Upward Dog','Urdhva Mukha Svanasana','Intermediate',[150,5,5,5,5,-85,-85,-85,-85],['chest','shoulders','arms','core'],'Opens the chest and strengthens arms and back, countering forward slumping.'],
+['Chaturanga','Chaturanga Dandasana','Intermediate',[103,-80,0,-80,0,-77,-77,-77,-77],['arms','core','shoulders','chest'],'Builds triceps, shoulder and core control; a vinyasa staple.'],
+['Staff','Dandasana','Beginner',[180,0,0,0,0,90,90,90,90],['core','thighs','chest'],'Teaches upright seated alignment and engages back and quads.'],
+['Seated Forward Fold','Paschimottanasana','Beginner',[95,90,90,90,90,90,90,90,90],['core','thighs','calves','neck'],'Lengthens hamstrings and spine; calming.'],
+['Boat','Navasana','Intermediate',[-160,90,90,90,90,135,135,135,135],['core','hips','thighs'],'Strengthens abdominals and hip flexors.'],
+['Locust','Salabhasana','Beginner',[100,-95,-95,-95,-95,-105,-105,-105,-105],['core','thighs','chest','shoulders'],'Strengthens the back body: spinal extensors, glutes and hamstrings.'],
+['Garland Squat','Malasana','Beginner',[165,100,160,100,160,110,-20,110,-20],['hips','thighs','calves','core'],'Opens hips and groins, strengthens ankles and eases lower-back tension.'],
+['Headstand','Sirsasana','Advanced',[0,0,90,0,90,180,180,180,180],['core','shoulders','arms','neck'],'Builds shoulder and core strength and balance. Learn with a teacher; avoid with neck or blood-pressure issues.'],
+['Shoulderstand','Sarvangasana','Intermediate',[5,95,95,95,95,175,175,175,175],['neck','shoulders','core','chest'],'Calming inversion that strengthens shoulders and upper back; avoid with neck injury.'],
+['Plough','Halasana','Intermediate',[5,95,95,95,95,58,58,58,58],['core','thighs','calves','neck'],'Stretches spine and hamstrings; avoid with neck problems.']];
+const SK=['#f1c9a8','#e6bf7c','#b87a4c','#6a4231','#cda17c','#946440'],OUT=['#7c5cbf','#3d6fb0','#e0705a','#3a3a44','#6b9a7f'];
+const STY={Vinyasa:[0,1,2,3,4,6,7,8,9,10,12,13,14,15,16,21],Ashtanga:[0,1,2,3,4,5,6,7,12,13,15,16,17,18,19,20,21,22,23,24],Bikram:[0,1,2,3,5,8,10,12,18,20],Iyengar:[0,1,2,3,4,5,10,11,12,13,17,18,22,23,24],'Bikram Adv.':[2,3,5,8,10,11,12,13,18,20,22,23,24]};
+const ADV=`Opening|Virabhadrasana – Salute to gods and goddesses (8 count)~Surya Namaskar – Salute to the sun (8 count)
+Half moon series|Pars Ardha Chandrasana – Lateral half moon~Ardha Chandrasana – Half moon (backbend)~Pada Hastasana – Hands to feet@2~Trikonasana – Triangle~Dandayamana Bibhaktapada Janushirasana – Standing separate-leg head to knee~Utkatasana – Awkward pose@3~Garudasana – Eagle~Dandayamana Janushirasana – Standing head to knee~Dandayamana Dhanurasana – Standing bow~Tuladandasana – Balancing stick@5~Bibhakta Hasta Tuladandasana – Separate-hands balancing stick~Dandayamana Bibhaktapada Paschimotthanasana – Standing separate-leg stretching~Tadasana (Vriksasana) – Tree@10~Padangustasana – Toe stand~Bamanasana – Short man~Angustasana – Finger stand~Kagasana – Crow~Bakasana – Crane~Pranasana – Life pose
+Lotus series|Astravakrasana – Rock the baby~Sukhasana – Easy pose@13~Samasana – Plain pose~Siddhasana – Success pose~Bhadrasana – Gentle pose~Swastikasana – Good luck pose~Ardha Padmasana – Half lotus~Padmasana – Lotus~Utthita Padmasana – Lifting lotus~Baddha Padmasana – Bound lotus~Tulangalasana – Lotus in L~Garbhasana – Fetal pose~Matsyasana – Fish~Makarasana – Spider~Parbatasana – Mountain~Kukkutasana – Cock~Shavasana – Dead body@12~Pavanamuktasana – Wind removing
+Cobra series|Bhujangasana – Cobra@8~Salabasana – Locust@20~Poorna Salabasana – Full locust~Dhanurasana – Bow
+Fixed firm series|Supta Vajrasana – Fixed firm~Ardha Kurmasana – Half tortoise~Ustrasana – Camel~Sasangasana – Rabbit~Shavasana – Dead body@12
+Stretching series|Janushirasana – Head to knee~Paschimotthanasana – Stretching@18~Bibhakta Pada Paschimotthanasana – Straddle~Mandukasana – Frog~Utthita Paschimotthanasana – Upward stretching~Poorna Bibhaktapada Janushirasana – Splits~Eka Pada Rajakapotasana – Pigeon~Dandayamana Poorna Janushirasana – Standing splits~Poorna Dandayamana Dhanurasana – Full standing bow~Savasana – Corpse@12
+Double-sided series|Akarna Dhanurasana – Archer~Chatushkonasana – Four angle~Gomukhasana – Cow face~Ardha Matsyendrasana – Spine twist~Savasana – Corpse@12
+Bow leg series|Eka Pada Gokhilasana – Bow leg~Deepada Gokhilasana – Both legs bow leg~Gokhilasana Mayurasana – Bow leg in peacock~Gokhilasana Parbatasana – Bow leg in mountain
+Tortoise series|Eka Pada Shirasana – One leg overhead~Deepada Shirasana – Two legs overhead~Utthita Kurmasana – Upward tortoise~Kurmasana – Tortoise~Yoga Nidrasana – Yogi in sleep~Ohm pose~Goodbye pose~Savasana – Corpse@12
+Plough series|Uthanapadasana – Leg raises~Halasana – Plough@24~Karnapitasana – Knees to ears~Sarvangasana – Shoulder stand@23~Urdha Sarvangasana – Lotus shoulder stand~Baddha Sarvangasana – Folding shoulder stand~Savasana – Corpse@12
+Full series|Poorna Bhujangasana – Full cobra~Poorna Dhanurasana – Full bow~Poorna Ustrasana – Full camel~Setu Bandha – Bridge@11~Chakrasana – Wheel~Savasana – Corpse@12
+Peacock series|Mayurasana – Peacock~Baddha Mayurasana – Folding peacock~Eka Pada Mayurasana – One leg peacock~Kahasta Mayurasana – One arm peacock~Shavasana – Corpse@12
+Headstand series|Ardha Sirsasana – Half headstand~Sirsasana – Headstand@22~Urdha Sirsasana – Upward headstand~Baddha Sirsasana – Folding headstand
+Tiger series|Bagghrasana – Tiger~Bagghrasana Vrschikasana – Scorpion in tiger~Baggharasana Brischikasana – Folding handstand~Likarasana
+Handstand series|Hastasana – Handstand~Hastasana – Upward handstand~Kukkutasana – Folding handstand~Eka Hasta Hastasana – One-hand handstand~Vrschika Hastasana – Scorpion handstand~Brikkhasana – Palm tree~Simhasana – Lion
+Breath, bandhas and mudras|Kapalabati – Blowing breath~Savasana – Dead body@12~Biarith Karani Mudra~Aswaini Mudra~Yogamudra~Maha Mudra~Uddiyana Bandha~Nauli Bandha~Sitali – Cooling breath`.split('\n').map(l=>{const[s,r]=l.split('|');return[s,r.split('~').map(x=>{const[n,i]=x.split('@');return[n,i===undefined?-1:+i]})]});
+const PRE={Vinyasa:[[0,4],[1,4],[2,4],[7,4],[16,4],[15,4],[6,15],[2,4],[1,4],[0,6]],Ashtanga:[[0,4],[1,4],[2,4],[7,4],[16,4],[15,4],[6,25],[2,4],[1,4],[0,4],[1,4],[2,4],[7,4],[16,4],[15,4],[6,25],[2,4],[17,10],[18,25],[19,25],[21,25],[23,25],[24,25],[12,60]],Bikram:[[3,10],[10,10],[5,8],[20,8],[8,8],[12,15]],Iyengar:[[0,15],[1,15],[2,20],[10,20],[17,20],[18,30],[22,30],[23,30],[12,30]],'Bikram Adv.':[[2,8],[3,10],[5,8],[10,10],[13,15],[12,20],[8,8],[20,8],[18,10],[24,10],[23,15],[11,10],[22,15],[12,30]]};
+const SEED=[{id:'s1',name:'Morning Wake-Up',author:'Maya R.',price:0,flow:[[0,6],[1,6],[2,8],[3,6],[4,8],[0,6]]},
+{id:'s2',name:'Strong Core Burner',author:'Dev K.',price:4,flow:[[6,8],[7,10],[8,8],[9,8],[11,8]]},
+{id:'s3',name:'Evening Wind-Down',author:'Lena P.',price:0,flow:[[13,8],[2,8],[8,6],[9,10],[11,8],[12,15]]}].map(m=>({...m,flow:m.flow.map(([i,d])=>({i,d}))}));
+const SF=[{id:1,a:'Maya R.',t:'Best flow for desk workers?',b:'Looking for 10-minute sequences to undo sitting all day.',r:[{a:'Dev K.',b:'Try Forward Fold → Cobra → Child’s Pose.'}]}];
+const G=370,D=Math.PI/180,TR=2,cv=$('#cv'),cx=cv.getContext('2d');
+let lastCue=-1,flow=[],playing=false,t=0,stat=0,curK=-2,lastS=[],lastPose=P[0],recording=false,mr,chunks=[],fileURL='',AC,mix,msd,amb=[],aud;
+function pts(a){const[tt,al,fl,ar,fr,tl,sl,tr,sr]=a,d=(x,l)=>[Math.sin(x*D)*l,Math.cos(x*D)*l],ad=(p,v)=>[p[0]+v[0],p[1]+v[1]];
+const hip=[0,0],sh=ad(hip,d(tt,80)),mid=[sh[0]/2,sh[1]/2],hd=ad(sh,d(tt,30)),eL=ad(sh,d(al,45)),hL=ad(eL,d(fl,45)),eR=ad(sh,d(ar,45)),hR=ad(eR,d(fr,45)),kL=ad(hip,d(tl,75)),aL=ad(kL,d(sl,75)),kR=ad(hip,d(tr,75)),aR=ad(kR,d(sr,75));
+const o={hip,mid,sh,hd,eL,hL,eR,hR,kL,aL,kR,aR},v=Object.values(o),my=Math.max(...v.map(p=>p[1])),mx=v.reduce((s,p)=>s+p[0],0)/v.length;
+for(const k in o)o[k]=[o[k][0]-mx+200,o[k][1]-my+G];return o}
+const segs=p=>[['arms',p.sh,p.eR,11,0],['arms',p.eR,p.hR,9,0],['calves',p.kR,p.aR,12,0],['thighs',p.hip,p.kR,15,0],['core',p.hip,p.mid,24,1],['chest',p.mid,p.sh,26,1],['neck',p.sh,p.hd,10,1],['thighs',p.hip,p.kL,16,2],['calves',p.kL,p.aL,13,2],['arms',p.sh,p.eL,12,2],['arms',p.eL,p.hL,10,2],['hips',p.hip,p.hip,22,1],['shoulders',p.sh,p.sh,20,1]];
+const SH=['#9db3c7','#7c98b3','#5f7f9e'];
+function draw(a,pose,hl){const p=pts(a),S=lastS=segs(p),H=new Set(hl),pu=.7+.3*Math.sin(Date.now()/250),col=r=>H.has(r)?`rgba(229,56,59,${pu*.65})`:null;const F=$('#gen').value==='f',SKN=SK[+$('#skn').value],CLC=OUT[+$('#out').value],BW=[.88,1,1.18][+$('#bld').value],HR=+$('#hr').value,CL=F?['chest','hips','thighs']:['hips','thighs'];
+const g=cx.createLinearGradient(0,0,0,420);g.addColorStop(0,'#f6efe3');g.addColorStop(1,'#dcece6');cx.fillStyle=g;cx.fillRect(0,0,400,420);
+cx.fillStyle='#c9bfae';cx.fillRect(0,G+4,400,50);lotus();cx.textAlign='center';cx.fillStyle='rgba(124,92,191,.17)';cx.font='bold 44px Georgia';cx.fillText(pose[0],200,150,380);cx.font='italic 28px Georgia';cx.fillText(pose[1],200,192,380);cx.lineCap='round';
+for(const[r,A,B,w0,s]of S){const w=w0*BW*(r==='chest'?(F?.95:1.15):r==='hips'||r==='thighs'?(F?1.12:.97):1),cl=CL.includes(r);cx.lineWidth=w;cx.beginPath();cx.moveTo(...A);cx.lineTo(...B);cx.strokeStyle=cl?CLC:SKN;cx.stroke();if(s==0){cx.strokeStyle='rgba(0,0,0,.22)';cx.stroke()}if(col(r)){cx.strokeStyle=col(r);cx.stroke()}cx.lineWidth=w*.28;cx.strokeStyle='rgba(255,255,255,.2)';cx.stroke()}
+const hc=F?'#3b2a22':'#2b2018',[hx,hy]=p.hd;cx.fillStyle=HR===3?SKN:hc;cx.strokeStyle=hc;cx.beginPath();cx.arc(hx,hy,HR===3?14.5:15.5,0,7);cx.fill();if(HR===1){cx.lineWidth=8;cx.beginPath();cx.moveTo(hx-9,hy);cx.lineTo(hx-15,hy+28);cx.stroke()}if(HR===2){cx.fillStyle=hc;cx.beginPath();cx.arc(hx-9,hy-13,7,0,7);cx.fill()}cx.fillStyle=SKN;cx.beginPath();cx.arc(hx+4,hy+2,11.5,0,7);cx.fill();if(col('neck')){cx.fillStyle=col('neck');cx.fill()}
+cx.fillStyle='#2b2a33';cx.textAlign='left';cx.font='bold 16px system-ui';cx.fillText($('#nm').value.slice(0,28),12,24);cx.font='13px system-ui';cx.fillStyle='#7c5cbf';cx.fillText('From: '+Object.keys(STY).filter(k=>STY[k].includes(P.indexOf(pose))).join(' · '),12,42);
+cx.textAlign='right';cx.font='14px system-ui';cx.fillStyle='#2f7d6d';cx.fillText(playing?(Math.floor(t/4)%2?'Exhale…':'Inhale…'):'',388,24);
+cx.textAlign='center';cx.fillStyle='#2b2a33';cx.font='bold 18px system-ui';cx.fillText(pose[0],200,G+30);cx.font='italic 13px system-ui';cx.fillText(pose[1],200,G+46)}
+function lotus(){cx.save();cx.translate(200,338);cx.shadowColor='rgba(124,92,191,.3)';cx.shadowBlur=14;for(const[r,sc,al]of[[-78,.85,.7],[78,.85,.7],[-54,1,.8],[54,1,.8],[-28,1.1,.88],[28,1.1,.88],[0,1.2,.95]]){cx.save();cx.rotate(r*D);cx.fillStyle=`rgba(255,255,255,${al})`;cx.strokeStyle='rgba(205,170,225,.7)';cx.lineWidth=1.5;cx.beginPath();cx.ellipse(0,-95*sc,28*sc,95*sc,0,0,7);cx.fill();cx.stroke();cx.restore()}cx.restore()}
+const ease=x=>x<.5?2*x*x:1-Math.pow(-2*x+2,2)/2,total=()=>flow.reduce((s,f)=>s+TR+f.d,0);
+function at(tm){let acc=0;for(let k=0;k<flow.length;k++){const L=TR+flow[k].d;if(tm<acc+L)return{k,u:tm-acc};acc+=L}return null}
+function frame(){let a,pose,hl=[];
+if(flow.length&&(playing||t>0)){const r=at(t);if(!r)return end();const cur=P[flow[r.k].i],prev=P[flow[Math.max(0,r.k-1)].i],e=r.k?ease(Math.min(1,r.u/TR)):1;
+a=prev[3].map((v,j)=>v+(cur[3][j]-v)*e);pose=cur;if(e>.6)hl=cur[4];if(r.k!==curK){curK=r.k;showPose(cur);narrate(cur)}const cq=Math.floor(t/4);if(playing&&cq!==lastCue&&r.u>4){lastCue=cq;say(cq%2?'Exhale':'Inhale')}}
+else{pose=P[stat];a=pose[3].slice();hl=pose[4]}
+a[0]+=Math.sin(Date.now()/900)*1.2;lastPose=pose;draw(a,pose,hl)}
+function end(){playing=false;stopMusic();window.speechSynthesis&&speechSynthesis.cancel();lastCue=-1;t=0;curK=-2;$('#pp').textContent='▶ Play';if(recording){recording=false;mr.stop()}}
+function showPose(p){$('#info').innerHTML=`<b>${p[0]}</b> · <i>${p[1]}</i> · <small>${p[2]}</small><br>${p[5]}<br><small>Tap the red body parts (or chips) for medical benefits:</small><br>${p[4].map(r=>`<span class="chip" data-a="reg" data-v="${r}" style="cursor:pointer">${RG[r][0]}</span>`).join('')}<div id="rg"></div>`}
+cv.addEventListener('click',e=>{const R=cv.getBoundingClientRect(),x=(e.clientX-R.left)*400/R.width,y=(e.clientY-R.top)*420/R.height;let best=null,bd=1e9;
+for(const[r,A,B,w]of lastS){const dd=dist([x,y],A,B)-w/2;if(dd<bd){bd=dd;best=r}}
+const hd=Math.hypot(x-lastS[6][2][0],y-lastS[6][2][1])-15;if(hd<bd){bd=hd;best='neck'}
+if(best&&bd<14)ACT.reg(best)});
+function dist(p,a,b){const dx=b[0]-a[0],dy=b[1]-a[1],l=dx*dx+dy*dy||1,u=Math.max(0,Math.min(1,((p[0]-a[0])*dx+(p[1]-a[1])*dy)/l));return Math.hypot(p[0]-a[0]-u*dx,p[1]-a[1]-u*dy)}
+// audio
+function actx(){if(!AC){AC=new(window.AudioContext||window.webkitAudioContext)();mix=AC.createGain();mix.gain.value=MV;msd=AC.createMediaStreamDestination();mix.connect(AC.destination);mix.connect(msd)}if(AC.state==='suspended')AC.resume()}
+function startMusic(){stopMusic();const m=$('#mus').value;if(m==='none')return;try{actx();
+if(m==='file'){if(!fileURL)return;if(!aud){aud=new Audio();aud.loop=true;AC.createMediaElementSource(aud).connect(mix)}if(aud.src!==fileURL)aud.src=fileURL;aud.play();return}
+({calm:[110,164.8,220,261.6,329.6],warm:[73.4,110,146.8,185,220],bright:[130.8,196,261.6,329.6,392],om:[64.4,128.8,193.2,257.6],bowls:[261.6,392,523.3,784,1046.5],aurora:[87.3,130.8,174.6,261.6,349.2,523.3],zen:[110,165,247,330],sunrise:[130.8,196,261.6,392,523.3],moon:[82.4,123.5,164.8,246.9,311.1]})[m].forEach((f,i)=>{const o=AC.createOscillator(),g=AC.createGain(),l=AC.createOscillator(),lg=AC.createGain();o.type=i%2?'triangle':'sine';o.frequency.value=f;g.gain.value=.08;l.frequency.value=.07+i*.03;lg.gain.value=.05;l.connect(lg);lg.connect(g.gain);o.connect(g);g.connect(mix);o.start();l.start();amb.push(o,l)})}catch(e){}}
+let VV=ld('yvol',{v:1,m:.5}).v,MV=ld('yvol',{v:1,m:.5}).m;
+function say(x,l){if(!$('#vo').checked||!window.speechSynthesis)return;const u=new SpeechSynthesisUtterance(x);u.lang=l||'en-US';u.rate=.85;u.volume=VV;speechSynthesis.speak(u)}
+function narrate(p){if(window.speechSynthesis)speechSynthesis.cancel();say(p[0]);say(p[1],'hi-IN')}
+function stopMusic(){amb.forEach(o=>{try{o.stop()}catch(e){}});amb=[];if(aud)aud.pause()}
+$('#mus').onchange=e=>{if(e.target.value==='file')$('#mf').click();if(playing)startMusic()};
+$('#mf').onchange=e=>{const f=e.target.files[0];if(f){fileURL=URL.createObjectURL(f);if(playing)startMusic()}};
+// actions
+const ACT={
+tab(v){document.querySelectorAll('section').forEach(s=>s.classList.toggle('on',s.id===v));document.querySelectorAll('nav button').forEach(b=>b.classList.toggle('g',b.dataset.v!==v));if(v==='ts')rSpace()},
+tog(){if(!flow.length){$('#info').innerHTML='Add at least one pose to your flow first.';return}playing=!playing;$('#pp').textContent=playing?'⏸ Pause':'▶ Play';playing?startMusic():(stopMusic(),window.speechSynthesis&&speechSynthesis.cancel())},
+rs(){end();t=0;ACT.tog()},
+rec(){if(!window.MediaRecorder||!cv.captureStream){$('#vid').innerHTML='<small>Video recording isn’t supported in this browser. Try Chrome or Edge on desktop or Android.</small>';return}
+if(!flow.length){ACT.tog();return}end();actx();const cs=cv.captureStream(30);msd.stream.getAudioTracks().forEach(k=>cs.addTrack(k));chunks=[];
+const mt=MediaRecorder.isTypeSupported('video/webm;codecs=vp9,opus')?'video/webm;codecs=vp9,opus':'video/webm';mr=new MediaRecorder(cs,{mimeType:mt});
+mr.ondataavailable=e=>chunks.push(e.data);mr.onstop=()=>{const u=URL.createObjectURL(new Blob(chunks,{type:'video/webm'}));$('#vid').innerHTML=`<video src="${u}" controls playsinline style="width:100%;margin-top:8px"></video><a class="b" href="${u}" download="${esc($('#nm').value||'flow')}.webm">⬇ Download video</a><a class="b" target="_blank" rel="noopener" href="https://www.youtube.com/upload">Upload to YouTube</a>`};
+mr.start();recording=true;$('#vid').innerHTML='<small>Recording the full flow… keep this tab open.</small>';ACT.tog()},
+reg(r){$('#rg')&&($('#rg').innerHTML=`<p><b>${RG[r][0]}</b><br>${RG[r][1]}</p>`)},
+add(v){flow.push({i:+v,d:6});rFlow()},pv(v){end();stat=+v;showPose(P[stat]);ACT.sub('info')},
+rm(v){flow.splice(+v,1);rFlow()},up(v){v=+v;if(v>0){[flow[v-1],flow[v]]=[flow[v],flow[v-1]];rFlow()}},dn(v){v=+v;if(v<flow.length-1){[flow[v+1],flow[v]]=[flow[v],flow[v+1]];rFlow()}},
+clr(){end();flow=[];rFlow()},
+save(){if(!flow.length)return;const m=ld('yf',[]);m.push({id:'f'+Date.now(),name:$('#nm').value||'Untitled',flow:JSON.parse(JSON.stringify(flow)),mus:$('#mus').value});sv('yf',m);rMy()},
+load(v){const f=ld('yf',[]).find(x=>x.id===v);if(f)openFlow(f)},del(v){sv('yf',ld('yf',[]).filter(x=>x.id!==v));rMy()},
+pub(v){const f=ld('yf',[]).find(x=>x.id===v),pr=ld('yprof',{n:''}),p=ld('yp',[]);p.push({id:'p'+Date.now(),name:f.name,author:pr.n||'Guest',price:Math.max(0,+($('#pr'+v).value)||0),flow:f.flow});sv('yp',p);ACT.tab('ts')},
+op(v){const m=[...ld('yp',[]),...SEED].find(x=>x.id===v),b=ld('yb',[]),pr=ld('yprof',{n:''});
+if(m.price&&!b.includes(v)&&m.author!==pr.n){b.push(v);sv('yb',b);rSpace();return}openFlow(m)},
+sp(){sv('yprof',{n:$('#pn').value,b:$('#pb').value,s:$('#ps').value});$('#sty').value=$('#ps').value;rPick();rSpace()},
+post(){const t=$('#ft').value.trim();if(!t)return;const f=ld('yfm',SF);f.unshift({id:Date.now(),a:ld('yprof',{n:''}).n||'Guest',t,b:$('#fb').value,r:[]});sv('yfm',f);rSpace()},
+sug(){const m=MOOD[$('#sm').value],ar=[...document.querySelectorAll('.ar:checked')].map(x=>x.value),base=m[2].filter(i=>i!==12),ex=STY[m[0]].map(i=>[i,P[i][4].filter(r=>ar.includes(r)).length]).filter(([i,s])=>s>0&&!base.includes(i)&&i!==12).sort((a,b)=>b[1]-a[1]).slice(0,3).map(x=>x[0]),ids=[...base,...ex,12],d=Math.max(6,Math.min(60,Math.round(+$('#sti').value*60/ids.length-TR)));
+SG={name:m[0]+' routine',flow:ids.map(i=>({i,d}))};
+$('#sgr').innerHTML=`<div class="card"><h3>Try ${m[0]} yoga</h3><p>${m[1]}</p>${ar.length?`<p>Targeting: ${ar.map(r=>RG[r][0]).join(', ')}</p>`:''}${ids.map((i,k)=>`<div class="it"><span>${k+1}. <b>${P[i][0]}</b> <small>${P[i][1]}</small></span><small>${d}s</small></div>`).join('')}<button data-a="sgo">Open in builder</button><br><small>Skip any pose that causes sharp pain; see a clinician for injuries.</small></div>`},
+sgo(){openFlow(SG)},
+sub(v){document.querySelectorAll('.sb').forEach(e=>e.classList.toggle('on',e.dataset.sub===v));document.querySelectorAll('#subnav button').forEach(b=>b.classList.toggle('g',b.dataset.v!==v))},
+vtest(){if(window.speechSynthesis){speechSynthesis.cancel();say(lastPose[0]);say(lastPose[1],'hi-IN');say('Inhale')}},
+addl(v,b){ACT.add(v);b.textContent='✓ added'},
+preset(){const s=$('#sty').value,k=s==='all'?'Vinyasa':s;openFlow({name:k+' flow',flow:PRE[k].map(([i,d])=>({i,d}))})},
+dm(){const b=$('#mt').value.trim();if(!b)return;const m=ld('ydm',[]);m.push({to:$('#mto').value,from:ld('yprof',{n:''}).n||'Guest',b});sv('ydm',m);rSpace()},
+rep(v){const x=$('#r'+v).value.trim();if(!x)return;const f=ld('yfm',SF);f.find(p=>p.id==v).r.push({a:ld('yprof',{n:''}).n||'Guest',b:x});sv('yfm',f);rSpace()}};
+function openFlow(f){end();flow=JSON.parse(JSON.stringify(f.flow));$('#nm').value=f.name;rFlow();ACT.tab('tb');scrollTo(0,0)}
+document.addEventListener('click',e=>{const b=e.target.closest('[data-a]');if(b&&ACT[b.dataset.a])ACT[b.dataset.a](b.dataset.v,b)});
+document.addEventListener('change',e=>{if(e.target.classList.contains('dd')){flow[+e.target.dataset.v].d=+e.target.value;rFlow()}});
+$('#q').oninput=rPick;$('#sty').onchange=rPick;{const v=ld('yav',{g:'f',s:'0'});$('#gen').value=v.g;$('#skn').value=v.s;$('#bld').value=v.b||'1';$('#hr').value=v.h||'0';$('#out').value=v.o||'0';const pr=ld('yprof',{});if(pr.s)$('#sty').value=pr.s}['gen','skn','bld','hr','out'].forEach(k=>$('#'+k).onchange=()=>sv('yav',{g:$('#gen').value,s:$('#skn').value,b:$('#bld').value,h:$('#hr').value,o:$('#out').value}));
+function rFlow(){$('#fl').innerHTML=flow.length?flow.map((f,k)=>`<div class="it"><span>${k+1}. <b>${P[f.i][0]}</b></span><span><select class="dd" data-v="${k}">${[4,6,8,10,15,30,60].map(s=>`<option ${s==f.d?'selected':''} value="${s}">${s}s</option>`).join('')}</select><button class="g" data-a="up" data-v="${k}">↑</button><button class="g" data-a="dn" data-v="${k}">↓</button><button class="g" data-a="rm" data-v="${k}">✕</button></span></div>`).join(''):'<small>Your flow is empty. Add poses below with +.</small>';
+const s=total();$('#tot').textContent=flow.length?`Total: ${Math.floor(s/60)}m ${s%60}s · ${flow.length} poses`:''}
+function rPick(){const q=$('#q').value.toLowerCase();$('#pk').innerHTML=P.map((p,i)=>[p,i]).filter(([p,i])=>($('#sty').value==='all'||STY[$('#sty').value].includes(i))&&(!q||(p.slice(0,3).join(' ')+p[4].join(' ')).toLowerCase().includes(q))).map(([p,i])=>`<div class="it"><span data-a="pv" data-v="${i}" style="cursor:pointer;flex:1"><b>${p[0]}</b><br><small>${p[1]} · ${p[2]}</small></span><button data-a="add" data-v="${i}">＋</button></div>`).join('')}
+function rMy(){const m=ld('yf',[]);$('#my').innerHTML=m.length?m.map(f=>`<div class="it"><span><b>${esc(f.name)}</b><br><small>${f.flow.length} poses</small></span><span><button class="g" data-a="load" data-v="${f.id}">Open</button><input id="pr${f.id}" type="number" min="0" placeholder="$" style="width:56px"><button data-a="pub" data-v="${f.id}">Sell</button><button class="g" data-a="del" data-v="${f.id}">✕</button></span></div>`).join(''):'<small>Nothing saved yet.</small>'}
+function rSpace(){const pr=ld('yprof',{n:'',b:''}),b=ld('yb',[]),all=[...ld('yp',[]),...SEED],fm=ld('yfm',SF),dm=ld('ydm',[]),me=pr.n||'Guest',pp=[...new Set([...all.map(m=>m.author),...fm.map(p=>p.a),...fm.flatMap(p=>p.r.map(r=>r.a))])].filter(x=>x!==me);
+$('#ts').innerHTML=`<div class="card"><h3>Your profile</h3><input id="pn" placeholder="Display name" value="${esc(pr.n)}"><input id="pb" placeholder="Short bio" value="${esc(pr.b)}"><select id="ps">${['Vinyasa','Ashtanga','Bikram','Iyengar'].map(s=>`<option ${pr.s===s?'selected':''}>${s}</option>`).join('')}</select><button data-a="sp">Save profile</button></div>
+<div class="card"><h3>Flow marketplace</h3>${all.map(m=>`<div class="it"><span><b>${esc(m.name)}</b><br><small>by ${esc(m.author)} · ${m.flow.length} poses · ${m.price?'$'+m.price:'Free'}</small></span><button data-a="op" data-v="${m.id}">${m.price&&!b.includes(m.id)&&m.author!==pr.n?'Buy (demo)':'Open'}</button></div>`).join('')}<small>Purchases are simulated. Real payments need a backend (see notes).</small></div>
+<div class="card"><h3>Messages</h3><select id="mto">${pp.map(x=>`<option>${esc(x)}</option>`).join('')}</select><input id="mt" placeholder="Message a yogi…"><button data-a="dm">Send</button>${dm.slice(-12).map(x=>`<p class="m"><b>${esc(x.from)}</b> → ${esc(x.to)}: ${esc(x.b)}</p>`).join('')}<small>Messages stay on this device until a server is connected.</small></div><div class="card"><h3>Community forum</h3><input id="ft" placeholder="Start a discussion"><input id="fb" placeholder="Details"><button data-a="post">Post</button>
+${fm.map(p=>`<details open><summary><b>${esc(p.t)}</b> <small>by ${esc(p.a)}</small></summary><p>${esc(p.b)}</p>${p.r.map(r=>`<p class="m">↳ <b>${esc(r.a)}:</b> ${esc(r.b)}</p>`).join('')}<input id="r${p.id}" placeholder="Reply"><button class="g" data-a="rep" data-v="${p.id}">Reply</button></details>`).join('')}</div>`}
+function rLearn(){const B=[['Flexibility & mobility','Regular practice lengthens muscles and improves joint range of motion, especially in hamstrings, hips and shoulders.'],['Strength & balance','Holding poses builds functional strength and proprioception, which supports fall prevention in older adults.'],['Stress, mood & anxiety','Studies report lower perceived stress and improved mood with yoga, likely via breath regulation and parasympathetic activation.'],['Sleep','Evening practice and relaxation poses are associated with better sleep quality in several trials.'],['Back & neck pain','Yoga is among the better-supported complementary approaches for chronic low-back pain.'],['Heart health','Associated with modest improvements in blood pressure, resting heart rate and cholesterol alongside other lifestyle changes.'],['Breath & lung function','Pranayama (breathwork) can improve breathing efficiency and respiratory muscle strength.'],['Posture & body awareness','Mindful movement trains awareness of alignment, reducing habitual strain.']];
+const L=[['NCCIH: Yoga effectiveness and safety','https://www.nccih.nih.gov/health/yoga-effectiveness-and-safety'],['Harvard Health: Yoga topic hub','https://www.health.harvard.edu/topics/yoga'],['PubMed: yoga clinical research','https://pubmed.ncbi.nlm.nih.gov/?term=yoga'],['Yoga Alliance: teacher standards','https://www.yogaalliance.org'],['NIH: Relaxation techniques for health','https://www.nccih.nih.gov/health/relaxation-techniques-what-you-need-to-know']];
+$('#tl').innerHTML=`<div class="card"><h2 style="margin:0">Learn Yoga</h2><small>Benefits, pose library and trusted free resources.</small></div>
+<div class="card"><h3>Styles of yoga</h3><details><summary><b>Vinyasa</b></summary><p>Breath-linked, flowing sequences that change every class; sun salutations are the backbone.</p></details><details><summary><b>Ashtanga</b></summary><p>A set sequence (Primary, Intermediate, Advanced series) practised in the same order each time. Mysore style means self-paced practice of the memorized sequence, about five breaths per pose, with a teacher adjusting you one-on-one.</p></details><details><summary><b>Bikram</b></summary><p>A fixed series of 26 postures (24 poses plus 2 breathing exercises), usually taught in a heated room: Pranayama deep breathing, Half Moon, Awkward, Eagle, Standing Head-to-Knee, Standing Bow, Balancing Stick, Standing Separate-Leg Stretching, Triangle, Separate-Leg Head-to-Knee, Tree, Toe Stand, Dead Body, Wind-Removing, Sit-up, Cobra, Locust, Full Locust, Bow, Fixed Firm, Half Tortoise, Camel, Rabbit, Head-to-Knee with Stretching, Spine Twisting, Kapalbhati breathing.</p></details><details><summary><b>Iyengar</b></summary><p>Precise alignment, longer holds and props such as blocks, straps and bolsters; good for rehab and beginners.</p></details></div><div class="card"><h3>Benefits of yoga</h3>${B.map(x=>`<details><summary><b>${x[0]}</b></summary><p>${x[1]}</p></details>`).join('')}</div>
+<div class="card"><h3>Bikram Advanced series (in order)</h3><small>＋ marks poses already animated in the app; the rest are listed and coming.</small>${ADV.map(([s,l])=>`<details><summary><b>${s}</b> <small>${l.length}</small></summary>${l.map(([n,i])=>`<div class="it"><span>${n}</span>${i>=0?`<button data-a="addl" data-v="${i}">＋ Add</button>`:'<small>soon</small>'}</div>`).join('')}</details>`).join('')}<small>Cleansing kriyas (dhouti) are left out on purpose: they carry real risk and need a qualified teacher. Inversions, handstands and leg-behind-head poses need experienced guidance.</small></div><div class="card"><h3>Pose library</h3>${P.map(p=>`<details><summary><b>${p[0]}</b> · <i>${p[1]}</i> <small>${p[2]}</small></summary><p>${p[5]}</p><p><small>Works:</small> ${p[4].map(r=>`<span class="chip">${RG[r][0]}</span>`).join('')}</p></details>`).join('')}</div>
+<div class="card"><h3>Body region science</h3>${ALL.map(r=>`<details><summary><b>${RG[r][0]}</b></summary><p>${RG[r][1]}</p></details>`).join('')}</div>
+<div class="card"><h3>Safety basics</h3><p>Warm up, never force a stretch into sharp pain, keep knees tracking over toes, and modify or skip inversions with high blood pressure, glaucoma or pregnancy unless cleared by a clinician.</p></div>
+<div class="card"><h3>Free resources</h3>${L.map(l=>`<p><a target="_blank" rel="noopener" href="${l[1]}">${l[0]}</a></p>`).join('')}<small>Links open external sites.</small></div>`}
+const MOOD={stress:['Iyengar','Slow, supported holds calm the nervous system.',[13,9,2,18,11,12]],tired:['Vinyasa','Gentle flowing movement lifts energy without strain.',[0,1,2,14,15,6,4,12]],energized:['Ashtanga','Your energy suits a vigorous Mysore-style series with longer holds.',[0,1,2,7,16,15,6,3,5,12]],sleep:['Iyengar','Folds and restorative shapes prepare the body for sleep.',[13,9,18,11,12]],stiff:['Vinyasa','Warm, rhythmic movement loosens stiff joints.',[0,1,2,14,6,21,4,8,12]],focus:['Bikram','Fixed balance-and-discipline poses train concentration.',[3,10,5,20,8,12]]};
+let SG;
+function rSugg(){$('#tg').innerHTML=`<div class="card"><h3>Suggest yoga</h3><small>Tell me how you feel and what aches.</small><select id="sm"><option value="stress">I feel stressed or anxious</option><option value="tired">I’m tired or low on energy</option><option value="energized">I’m energized</option><option value="sleep">I can’t wind down or sleep</option><option value="stiff">I feel stiff</option><option value="focus">I want focus and discipline</option></select><p><b>Where are you sore, or what do you want to benefit?</b></p>${ALL.map(r=>`<label style="display:inline-block;margin:3px 8px 3px 0"><input type="checkbox" class="ar" value="${r}" style="width:auto"> ${RG[r][0]}</label>`).join('')}<select id="sti"><option value="10">10 minutes</option><option value="20" selected>20 minutes</option><option value="30">30 minutes</option><option value="60">60 minutes</option></select><button data-a="sug">Suggest a routine</button></div><div id="sgr"></div>`}
+{const vv=$('#vv'),mv=$('#mvv');vv.value=Math.round(VV*100);mv.value=Math.round(MV*100);$('#vvl').textContent=vv.value+'%';$('#mvl').textContent=mv.value+'%';
+vv.oninput=()=>{VV=vv.value/100;$('#vvl').textContent=vv.value+'%';sv('yvol',{v:VV,m:MV})};
+vv.onchange=()=>{if(window.speechSynthesis){speechSynthesis.cancel();say('Inhale')}};
+mv.oninput=()=>{MV=mv.value/100;$('#mvl').textContent=mv.value+'%';if(mix)mix.gain.value=MV;sv('yvol',{v:VV,m:MV})}}
+rFlow();rPick();rMy();rLearn();rSugg();showPose(P[0]);ACT.sub('info');
+function sil(c,a,x,y,sc,fl){const p=pts(a),S=segs(p);c.save();c.translate(x,y);c.scale(sc*fl,sc);c.translate(-200,-G);c.fillStyle=c.strokeStyle='#fff';c.lineCap='round';for(const[r,A,B,w]of S){c.lineWidth=w*1.3;c.beginPath();c.moveTo(...A);c.lineTo(...B);c.stroke()}c.beginPath();c.arc(p.hd[0],p.hd[1],16,0,7);c.fill();c.restore()}
+function drawBg(){const el=$('#bgc'),W=innerWidth,H=innerHeight,dp=Math.min(2,devicePixelRatio||1);el.width=W*dp;el.height=H*dp;const c=el.getContext('2d');c.scale(dp,dp);const cell=Math.max(120,Math.min(W,H)/3.2),cols=Math.ceil(W/cell)+1,rows=Math.ceil(H*.95/cell);
+for(let r=0;r<rows;r++)for(let k=0;k<cols;k++){const i=(r*5+k*7+r*k)%P.length,off=r%2?cell/2:0;sil(c,P[i][3],k*cell+off-cell/4+cell/2,r*cell+cell*.92,cell*.7/270,(r+k)%2?-1:1)}}
+drawBg();let rzT;addEventListener('resize',()=>{clearTimeout(rzT);rzT=setTimeout(drawBg,200)});
+let last=performance.now();(function loop(n){const dt=(n-last)/1000;last=n;if(playing)t+=dt;frame();requestAnimationFrame(loop)})(last);
+</script></body></html>
+
+</body></html>
